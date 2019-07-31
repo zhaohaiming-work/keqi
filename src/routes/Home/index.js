@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <div>
-          你可以用他做任何事情
+          你可以正常使用了
         </div>
         <button onClick={this.log}>
           点我
