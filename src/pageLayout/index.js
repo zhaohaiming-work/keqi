@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // import './page-layout'
 
 import { Drawer, List } from 'antd-mobile'
-import { Header } from './headers'
+import Header from './headers'
 
 class App extends React.Component {
   static propTypes = {
