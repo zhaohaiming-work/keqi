@@ -14,7 +14,7 @@
     width:300px;
     height:100%;
     color:#ffff;
-    background-color:rgb(56,72,153);
+    background-color:rgb(56, 72, 153);
   }
 }
 .my-drawer {
@@ -30,4 +30,61 @@
 .my-drawer .am-drawer-sidebar .am-list {
   width: 300px;
   padding: 0;
+}
+.am-navbar{
+  width:100%;
+  height:110px;
+}
+.keqi{
+  width:115px;
+  height:53px;
+}
+.am-icon-md{
+  width:48px;
+  height:45px;
+  border:1px solid rgb(56, 72, 153);
+}
+
+$projectId:'_1328648_8xjo0v6vbkr';
+@font-face {
+  font-family: 'iconfont';  /* project id 1328648 */
+  src: url('//at.alicdn.com/t/font#{$projectId}.eot');
+  src: url('//at.alicdn.com/t/font#{$projectId}.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font#{$projectId}.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font#{$projectId}.woff') format('woff'),
+  url('//at.alicdn.com/t/font#{$projectId}.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font#{$projectId}.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:20px;
+  font-style:normal;
+  color: cornflowerblue;
+  text-align: center;
+  width:100%;
+  height:50px;
+}
+
+$projectId:'_1328805_nl2fznpc3n';
+// @font-face {
+//   font-family: 'iconfont';  /* project id 1328648 */
+//   src: url('//at.alicdn.com/t/font#{$projectId}.eot');
+//   src: url('//at.alicdn.com/t/font#{$projectId}.eot?#iefix') format('embedded-opentype'),
+//   url('//at.alicdn.com/t/font#{$projectId}.woff2') format('woff2'),
+//   url('//at.alicdn.com/t/font#{$projectId}.woff') format('woff'),
+//   url('//at.alicdn.com/t/font#{$projectId}.ttf') format('truetype'),
+//   url('//at.alicdn.com/t/font#{$projectId}.svg#iconfont') format('svg');
+// }
+// @font-face {
+//   font-family: 'iconfont';  /* project id 1328805 */
+//   src: url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.eot');
+//   src: url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.eot?#iefix') format('embedded-opentype'),
+//   url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.woff2') format('woff2'),
+//   url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.woff') format('woff'),
+//   url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.ttf') format('truetype'),
+//   url('//at.alicdn.com/t/font_1328805_nl2fznpc3n.svg#iconfont') format('svg');
+// }
+.iconfont2{
+  font-size:30px;
+  color:#000;
 }

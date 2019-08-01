@@ -1,11 +1,11 @@
 import React from 'react'
-import './page-layout.scss'
 import PropTypes from 'prop-types'
 // import './page-layout'
 
 import { Drawer, List } from 'antd-mobile'
 import Header from './headers'
 
+import './page-layout.scss'
 class App extends React.Component {
   static propTypes = {
     children: PropTypes.node
