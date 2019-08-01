@@ -1,17 +1,8 @@
 import React from 'react'
+import './page-layout.scss'
 import PropTypes from 'prop-types'
 import { NavBar, Icon } from 'antd-mobile'
-import '../style'
 class App extends React.Component {
-  // static propTypes = {
-  //   obj: PropTypes.object
-  // }
-  componentDidMount () {
-    console.log(this.props)
-  }
-  add = () => {
-
-  }
   render () {
     // const { todos, count } = this.props.example
     return (
