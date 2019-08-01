@@ -39,8 +39,24 @@
   width:115px;
   height:53px;
 }
+.am-icon-md:nth-child(1){
+  padding-top:3px;
+}
 .am-icon-md{
   width:48px;
   height:45px;
   border:1px solid rgb(56, 72, 153);
+  text-align: center;
+  border-radius:3px;
+  >.iconfont1{
+    font-size:20px;
+  }
+  >div{
+    color:#000;
+    font-size:13px;
+  }
+  >.iconfont2{
+    font-size:30px;
+    line-height: 45px;
+  }
 }

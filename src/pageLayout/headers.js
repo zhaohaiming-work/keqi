@@ -14,10 +14,11 @@ class App extends React.Component {
           onLeftClick={() => console.log('onLeftClick')}
           rightContent={[
             <span style={{ marginRight: '16px' }} className='am-icon-md'>
-              <i className='iconfont'>&#xe60a;</i>
+              <i className='iconfont iconfont1'>&#xe607;</i>
+              <div>我的</div>
             </span>,
             <span style={{ marginRight: '16px' }} className='am-icon-md'>
-              <i className='iconfont2'>&#xe65c;</i>
+              <i className='iconfont iconfont2'>&#xe65c;</i>
             </span>,
           ]}
         />

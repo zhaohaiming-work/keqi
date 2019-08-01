@@ -32,7 +32,7 @@ class App extends React.Component {
       <React.Fragment>
         {/* <div className='page-layout'>{children}</div> */}
         {/* <NavBar icon={<Icon type='ellipsis' />} onLeftClick={this.onOpenChange}>Basic</NavBar> */}
-        <Header />
+        {!this.state.open && <Header onClick={this.onOpenChange} />}
         {this.state.open && <div className='navBar' >
           <span>网站首页</span>
           <span onClick={this.onOpenChange}>X</span>
