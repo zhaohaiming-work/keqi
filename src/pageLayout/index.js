@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import './page-layout'
 
 import { Drawer, List } from 'antd-mobile'
+import { Header } from 'layout/headers'
 
 class App extends React.Component {
   static propTypes = {
@@ -31,10 +32,11 @@ class App extends React.Component {
       <React.Fragment>
         {/* <div className='page-layout'>{children}</div> */}
         {/* <NavBar icon={<Icon type='ellipsis' />} onLeftClick={this.onOpenChange}>Basic</NavBar> */}
-        <div className='navBar' open={this.state.open}>
+        <Header />
+        {this.state.open && <div className='navBar' >
           <span>网站首页</span>
           <span onClick={this.onOpenChange}>X</span>
-        </div>
+        </div>}
         <Drawer
           className='my-drawer'
           style={{ minHeight: document.documentElement.clientHeight }}
