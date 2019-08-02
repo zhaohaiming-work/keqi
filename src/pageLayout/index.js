@@ -24,7 +24,8 @@ class App extends React.Component {
     const sidebar = (<List>
       {[0, 1, 2].map((i, index) => {
         return (<List.Item key={index}
-          thumb='https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png'
+          // thumb='https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png'
+
         >{arr[index]}</List.Item>)
       })}
     </List>)
@@ -32,7 +33,7 @@ class App extends React.Component {
       <React.Fragment>
         {/* <div className='page-layout'>{children}</div> */}
         {/* <NavBar icon={<Icon type='ellipsis' />} onLeftClick={this.onOpenChange}>Basic</NavBar> */}
-        {!this.state.open && <Header onClick={this.onOpenChange} />}
+        {!this.state.open && <Header onOpenChanges={this.onOpenChange} />}
         {this.state.open && <div className='navBar' >
           <span>网站首页</span>
           <span onClick={this.onOpenChange}>X</span>

@@ -56,6 +56,7 @@ const config = {
       store: resolve(`${srcDir}/mobx/index`),
       img: resolve(`${srcDir}/images`),
       api: resolve(`${srcDir}/api`),
+      func: resolve(`${srcDir}/func`),
     }
   },
   externals,
