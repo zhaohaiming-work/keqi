@@ -8,7 +8,8 @@ import { Provider } from 'mobx-react'
 import Home from 'pages/Home'
 import PageLayout from 'layout'
 import Base from './routes'
-const Login = lazy(() => import('./routes/Login/index'))
+import Login from './routes/Login/components/homePage'
+// const Login = lazy(() => import('./routes/Login/index'))
 class App extends React.Component {
   componentDidMount () {
     // 初始化快速点击

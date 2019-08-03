@@ -1,8 +1,8 @@
 import React from 'react'
-// import { observer, inject } from 'mobx-react'
 import PropTypes from 'prop-types'
 import { Carousel, WingBlank } from 'antd-mobile'
 import '../style'
+import Service from '../../Service/tmpl/homePage'
 // @inject('example')
 // @observer
 class App extends React.Component {
@@ -60,12 +60,21 @@ class App extends React.Component {
                       this.setState({ imgHeight: 'auto' })
                     }}
                   />
+                  <div className='pA'>
+                    <div>一站式服务平台，您的房屋管家</div>
+                    <ul>
+                      <li>专业</li>
+                      <li>快捷</li>
+                      <li>有保障</li>
+                      <li>评价</li>
+                    </ul>
+                  </div>
                 </a>
               )
             )}
           </Carousel>
-          <div className='pA' />
         </WingBlank>
+        <Service style={{ marginTop:'10px' }} />
       </div>
     )
   }

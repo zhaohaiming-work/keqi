@@ -1,0 +1,10 @@
+.box{
+  width: 100%;
+  height: 100px;
+  background: red;
+  font-family: Tahoma,Geneva,sans-serif;
+}
+.demoTitle:before,
+.demoTitle:after {
+  border-bottom: none;
+}

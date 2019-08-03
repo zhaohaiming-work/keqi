@@ -33,8 +33,14 @@
 }
 .am-navbar{
   width:100%;
-  height:110px;
+  height:90px; 
 }
+.am-drawer-overlay{
+  background-color:rgba(245,245,249,1)!important;
+}
+// .my-drawer .am-drawer-sidebar{
+//   background-color:rgba(225,225,225,0.8)!important;
+// }
 .keqi{
   width:115px;
   height:53px;
@@ -59,4 +65,10 @@
     font-size:30px;
     line-height: 45px;
   }
+}
+.am-drawer-draghandle {
+   background-color: rgba(50, 50, 50, 0);
+}
+.am-drawer-draghandle + div{
+  background-color:#fff!important;
 }

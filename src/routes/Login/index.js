@@ -1,16 +1,12 @@
-import React from 'react'
+import { lazy } from 'react'
+// import mergeRoute from 'components/mergeRoutes'
+// const Login = React.lazy(() => import('./components/homePage'))
 // const aaa = 888
-class App extends React.Component {
-  log = () => {
-    console.log('不要点我')
-  }
-  render () {
-    return (
-      <React.Fragment>
-        我是登录界面,你好世界
-      </React.Fragment>
-    )
-  }
-}
 
-export default App
+// export default mergeRoute([
+//   {
+//     path: '/login',
+//     tmpl: Login
+//   }
+// ])
+export default lazy(() => import('./components/homepage'))

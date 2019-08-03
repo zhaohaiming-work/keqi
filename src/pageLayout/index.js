@@ -6,6 +6,8 @@ import { Drawer, List } from 'antd-mobile'
 import Header from './headers'
 
 import './page-layout.scss'
+import { history } from 'func'
+
 class App extends React.Component {
   static propTypes = {
     children: PropTypes.node
@@ -14,19 +16,33 @@ class App extends React.Component {
     open: true,
   }
   onOpenChange = (...args) => {
-    console.log(args)
+    // console.log(args)
     this.setState({ open: !this.state.open })
   }
-
+  routes_s = (a) => {
+    console.log(a)
+    this.setState({ open: !this.state.open })
+    history.push(a)
+  }
   render () {
     const { children } = this.props
-    let arr = ['新闻中心', '服务项目', '主要服务']
+    let arr = [
+      {
+        title:'新闻中心',
+        URL:'service'
+      },
+      {
+        title:'服务项目',
+        URL:'index'
+      },
+      {
+        title:'主要服务',
+        URL:'service'
+      }
+    ]
     const sidebar = (<List>
-      {[0, 1, 2].map((i, index) => {
-        return (<List.Item key={index}
-          // thumb='https://zos.alipayobjects.com/rmsportal/eOZidTabPoEbPeU.png'
-
-        >{arr[index]}</List.Item>)
+      {arr.map((item, index) => {
+        return (<List.Item key={index} onClick={() => { this.routes_s(`/${item.URL}`) }}>{item.title}</List.Item>)
       })}
     </List>)
     return (
@@ -35,14 +51,14 @@ class App extends React.Component {
         {/* <NavBar icon={<Icon type='ellipsis' />} onLeftClick={this.onOpenChange}>Basic</NavBar> */}
         {!this.state.open && <Header onOpenChanges={this.onOpenChange} />}
         {this.state.open && <div className='navBar' >
-          <span>网站首页</span>
+          <span onClick={() => { this.routes_s(`/index`) }}>网站首页</span>
           <span onClick={this.onOpenChange}>X</span>
         </div>}
         <Drawer
           className='my-drawer'
           style={{ minHeight: document.documentElement.clientHeight }}
           enableDragHandle
-          contentStyle={{ color: '#A6A6A6', textAlign: 'center', paddingTop: 42 }}
+          contentStyle={{ color: '#A6A6A6', textAlign: 'center', paddingTop: 0 }}
           sidebar={sidebar}
           open={this.state.open}
         >
