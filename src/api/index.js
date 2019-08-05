@@ -1,10 +1,11 @@
 import axios from 'axios'
 import example from './example'
+import xswap from './xswap'
 // 接口模块
 
 // 实例化 ajax请求对象
 const ajaxinstance = axios.create({
-  baseURL: 'http://172.28.138.54:1442',
+  baseURL: 'http://10.226.116.181:1442',
   timeout: 60000,
   headers: {
     'Content-Type': 'application/json; charset=utf-8'
@@ -36,7 +37,8 @@ ajaxinstance
  * @type {Object}
  */
 const API = {
-  ...example
+  // ...example
+  ...xswap
 }
 export const ajax = ajaxinstance
 export default API

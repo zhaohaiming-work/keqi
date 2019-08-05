@@ -24,7 +24,7 @@ class App extends React.Component {
           columnNum={2}
           renderItem={dataItem => (
             <div style={{ margin: '0 12.5px 0', border:'1px solid rgba(221,221,221,1)', paddingBottom:'10px', height: '100%' }}>
-              <img src={dataItem.icon} style={{ width: '100%', height: '140px' }} alt='' />
+              <img src={dataItem.icon} style={{ width: '100%', height: '80%' }} alt='' />
               <div className='textHide'>
                 <span >{dataItem.text}</span>
               </div>
