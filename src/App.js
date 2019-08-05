@@ -8,7 +8,7 @@ import { Provider } from 'mobx-react'
 import Home from 'pages/Home'
 import PageLayout from 'layout'
 import Base from './routes'
-import Login from './routes/Login/components/homePage'
+import Login from './routes/Login'
 // const Login = lazy(() => import('./routes/Login/index'))
 class App extends React.Component {
   componentDidMount () {

@@ -3,6 +3,7 @@ import './page-layout.scss'
 // import PropTypes from 'prop-types'
 import { NavBar } from 'antd-mobile'
 import keqi from './image/keqi'
+import { history } from 'func'
 class App extends React.Component {
   state = {
     open: true,
@@ -20,7 +21,7 @@ class App extends React.Component {
           icon={<img src={keqi} className='keqi' />}
           // onLeftClick={() => console.log('onLeftClick')}
           rightContent={[
-            <span key='1' style={{ marginRight: '16px' }} className='am-icon-md'>
+            <span key='1' style={{ marginRight: '16px' }} className='am-icon-md' onClick={() => history.push('/login')}>
               <i className='iconfont iconfont1'>&#xe607;</i>
               <div>我的</div>
             </span>,

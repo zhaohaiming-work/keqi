@@ -13,7 +13,7 @@ class App extends React.Component {
     children: PropTypes.node
   }
   state = {
-    open: true,
+    open: false,
   }
   onOpenChange = (...args) => {
     // console.log(args)
@@ -52,7 +52,7 @@ class App extends React.Component {
         {!this.state.open && <Header onOpenChanges={this.onOpenChange} />}
         {this.state.open && <div className='navBar' >
           <span onClick={() => { this.routes_s(`/index`) }}>网站首页</span>
-          <span onClick={this.onOpenChange}>X</span>
+          <span onClick={this.onOpenChange}><i className='iconfont fg'>&#xe635;</i></span>
         </div>}
         <Drawer
           className='my-drawer'

@@ -9,4 +9,4 @@ import { lazy } from 'react'
 //     tmpl: Login
 //   }
 // ])
-export default lazy(() => import('./components/homepage'))
+export default lazy(() => import('./components/homePage'))
