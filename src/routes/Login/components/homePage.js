@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { List, InputItem, Toast, Button, WhiteSpace, WingBlank } from 'antd-mobile'
 // import { createForm } from 'rc-form'
-// import login from 'img/login'
+import login from 'img/login'
 import { history } from 'func'
 import api from 'api'
 
@@ -40,7 +40,7 @@ class App extends React.Component {
       user,
       password,
     }).then(res => {
-      Toast.success('注册成功')
+      Toast.success('登录成功')
       this.setState({
         user: '',
         password: '',
